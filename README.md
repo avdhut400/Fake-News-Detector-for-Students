@@ -1,87 +1,79 @@
-🎓 Fake News Detector for Students
+# 🎓 Fake News Detector for Students
 
-A Machine Learning–based web application that helps students identify whether a news article or message is Fake, Real, or Uncertain, especially for education-related content like exams, jobs, scholarships, and viral social media messages.
+A machine learning–based web application that helps students identify **fake, real, or uncertain news** related to **education, exams, jobs, and viral academic messages**.  
+The application is built using **Python, NLP, Machine Learning, and Streamlit**.
 
-📌 Problem Statement
+---
 
-Students are frequently exposed to fake or misleading news through social media and messaging platforms.
-Such misinformation can cause confusion, panic, and wrong decisions regarding exams, admissions, or jobs.
+## 🚀 Project Overview
 
-💡 Solution
+With the rapid spread of misinformation on social media, students often face confusion regarding exams, results, scholarships, and job opportunities.  
+This project aims to provide a simple tool that analyzes textual news content and predicts whether it is:
 
-This project uses Natural Language Processing (NLP) and Machine Learning to analyze news text and predict its authenticity based on learned language patterns.
+- ❌ Fake  
+- ✅ Real  
+- 🤔 Uncertain (needs verification)
 
-The system provides:
+---
 
-✅ REAL News
+## 🧠 How It Works
 
-❌ FAKE News
+1. User pastes education-related news text into the app  
+2. Text is cleaned using NLP preprocessing  
+3. A trained ML model predicts probabilities for:
+   - Fake news
+   - Real news
+4. Final decision is made using a **60% confidence threshold**
 
-🤔 UNCERTAIN (Needs Verification)
+> ⚠️ **Disclaimer:**  
+> This system predicts the likelihood of misinformation based on language patterns.  
+> It does **not replace official fact-checking sources**.
 
-instead of forcing incorrect predictions.
+---
 
-🚀 Features
+## 🛠️ Tech Stack
 
-📰 Detects fake and real news with confidence scores
+- **Python**
+- **Streamlit** (Web UI)
+- **Scikit-learn**
+- **Natural Language Processing (NLP)**
+- **Pickle** (Model & Vectorizer storage)
 
-🎯 Probability-based prediction logic
+---
 
-🎓 Focused on student-related news
+## 📊 Dataset
 
-🌐 Interactive Streamlit web interface
+- The dataset used to train this model is **sourced from Kaggle**
+- It focuses on **education-related news**
+- Initially, US-based datasets were explored, but the final training was done using **India-related education news data from Kaggle**
 
-⚠️ Warns users when verification is required
+> Dataset Source: **Kaggle (Indian education-related dataset)**
 
-🧠 Tech Stack
+---
 
-Python
+## 🎯 Model Output Logic
 
-Scikit-learn
+- **Fake** → Fake probability ≥ 60%
+- **Real** → Real probability ≥ 60%
+- **Uncertain** → If neither crosses 60%
 
-Natural Language Processing (NLP)
+---
 
-Streamlit
+## 🖥️ Application Features
 
-Pickle
+- Simple and clean UI
+- Real-time prediction
+- Confidence score display
+- Handles ambiguous cases as *Uncertain*
+- Designed specifically for **students**
 
-⚙️ How It Works
+---
 
-User enters news text
+## ▶️ How to Run Locally
 
-Text is cleaned using NLP techniques
-
-Vectorizer converts text into numerical form
-
-Trained ML model predicts probabilities
-
-Final decision is shown based on confidence threshold
-
-📂 Project Structure
-├── app.py
-├── model.pkl
-├── vectorizer.pkl
-├── requirements.txt
-└── README.md
-
-▶️ Run Locally
+```bash
+# Install dependencies
 pip install -r requirements.txt
+
+# Run the Streamlit app
 streamlit run app.py
-
-🎯 Prediction Logic
-
-Fake ≥ 60% → ❌ Fake News
-
-Real ≥ 60% → ✅ Real News
-
-Otherwise → 🤔 Uncertain / Needs Verification
-
-⚠️ Disclaimer
-
-This tool predicts the likelihood of misinformation based on trained data and language patterns.
-It does not replace official fact-checking sources.
-
-👨‍🎓 Author
-
-Avdhut
-Student | Machine Learning & Web Development Enthusiast
