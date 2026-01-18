@@ -5,7 +5,7 @@ The application is built using **Python, NLP, Machine Learning, and Streamlit**.
 
 ---
 
-#Demo https://fake-news-detector-for-students-hiadwvgqqvgxce8mrdaqbq.streamlit.app/
+Demo link - https://fake-news-detector-for-students-hiadwvgqqvgxce8mrdaqbq.streamlit.app/
 
 ## 🚀 Project Overview
 
