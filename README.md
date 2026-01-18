@@ -77,3 +77,27 @@ pip install -r requirements.txt
 
 # Run the Streamlit app
 streamlit run app.py
+
+├── app.py
+├── model.pkl
+├── vectorizer.pkl
+├── requirements.txt
+└── README.md
+
+📌 Limitations
+
+Model accuracy depends on dataset quality
+
+Limited availability of high-quality Indian education datasets
+
+Cannot guarantee 100% correctness
+
+🔮 Future Improvements
+
+Larger and more diverse Indian datasets
+
+Multilingual support (Hindi / Marathi etc.)
+
+URL-based news analysis
+
+Deep learning–based models
