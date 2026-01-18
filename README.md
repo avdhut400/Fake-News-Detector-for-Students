@@ -83,6 +83,7 @@ streamlit run app.py
 ├── vectorizer.pkl
 ├── requirements.txt
 └── README.md
+```
 
 📌 Limitations
 
@@ -95,9 +96,6 @@ Cannot guarantee 100% correctness
 🔮 Future Improvements
 
 Larger and more diverse Indian datasets
-
 Multilingual support (Hindi / Marathi etc.)
-
 URL-based news analysis
-
 Deep learning–based models
