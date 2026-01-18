@@ -5,6 +5,8 @@ The application is built using **Python, NLP, Machine Learning, and Streamlit**.
 
 ---
 
+#Demo https://fake-news-detector-for-students-hiadwvgqqvgxce8mrdaqbq.streamlit.app/
+
 ## 🚀 Project Overview
 
 With the rapid spread of misinformation on social media, students often face confusion regarding exams, results, scholarships, and job opportunities.  
